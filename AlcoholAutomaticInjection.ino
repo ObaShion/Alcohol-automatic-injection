@@ -57,6 +57,9 @@ void loop() {
     servo.write(0);
   } else if (distance < 20) {
     servo.write(180);
+    delay(1000);
+    servo.write(0);
+    delay(1000);
   }
 
   //distanceの値を調べる。ツール¥シリアルモニターで確認できます。
